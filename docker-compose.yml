@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  churnguard-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: telco-churnguard-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount artifacts if you want to persist models
+      - ./artifacts:/app/artifacts
+      # Mount logs for debugging
+      - ./logs:/app/logs
+      # Mount MLflow if you want to persist tracking
+      - ./mlflow:/app/mlflow
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
