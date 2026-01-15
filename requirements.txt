@@ -1,0 +1,39 @@
+# Data processing
+pandas
+numpy
+
+# Machine learning
+scikit-learn
+xgboost
+lightgbm
+
+# Model persistence
+joblib
+pickle-mixin
+
+# FastAPI for serving
+fastapi
+uvicorn[standard]
+pydantic
+
+# MLflow for experiment tracking
+mlflow
+
+# Logging & utilities
+loguru
+python-dotenv
+pyyaml
+
+# For HTTP requests (optional)
+requests
+
+# Optional: Visualization for EDA
+matplotlib
+seaborn
+
+# Optional: Jupyter notebooks
+notebook
+ipython
+
+# Packaging
+setuptools
