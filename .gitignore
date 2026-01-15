@@ -27,10 +27,6 @@ logs/
 *.joblib
 *.h5
 
-# Docker
-*.dockerignore
-Dockerfile
-
 # VS Code
 .vscode/
 

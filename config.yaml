@@ -1,0 +1,37 @@
+# Configuration file for Telco ChurnGuard MLOps Project
+
+# Data paths
+data_path: "data/Telco-Customer-Churn.csv"
+raw_data_path: "artifacts/raw_data.csv"
+train_data_path: "artifacts/train_data.csv"
+test_data_path: "artifacts/test_data.csv"
+
+# Model paths
+model_dir: "artifacts"
+model_path: "artifacts/model.pkl"
+preprocessor_path: "artifacts/preprocessor.pkl"
+
+# Training parameters
+test_size: 0.2
+random_state: 42
+target_column: "Churn"
+
+# Model parameters
+model_type: "xgboost"  # Options: xgboost, lightgbm, random_forest
+n_estimators: 100
+max_depth: 6
+learning_rate: 0.1
+random_state: 42
+
+# MLflow settings
+mlflow_tracking_uri: "file:./mlflow"
+experiment_name: "telco_churn_prediction"
+
+# Logging
+log_dir: "logs"
+log_file: "logs/training.log"
+
+# API settings
+api_host: "0.0.0.0"
+api_port: 8000
+
