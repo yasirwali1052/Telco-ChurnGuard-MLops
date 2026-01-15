@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.egg-info/
+*.egg
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data
+data/
+*.csv
+*.xlsx
+
+# Artifacts & Models
+artifacts/
+mlflow/
+logs/
+*.pkl
+*.joblib
+*.h5
+
+# Docker
+*.dockerignore
+Dockerfile
+
+# VS Code
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
